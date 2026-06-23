@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CasaNova.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6a403903a1dfe103ca54299ee741a8f21f4235d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b2f30aa76fddcd53a7f81ab04d6afca0fcee00b")]
 [assembly: System.Reflection.AssemblyProductAttribute("CasaNova.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CasaNova.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
