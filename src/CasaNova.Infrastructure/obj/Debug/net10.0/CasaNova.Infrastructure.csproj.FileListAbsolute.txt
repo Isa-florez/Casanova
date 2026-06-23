@@ -1,0 +1,12 @@
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/bin/Debug/net10.0/CasaNova.Infrastructure.deps.json
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/bin/Debug/net10.0/CasaNova.Infrastructure.dll
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/bin/Debug/net10.0/CasaNova.Infrastructure.pdb
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/obj/Debug/net10.0/CasaNova.Infrastructure.csproj.AssemblyReference.cache
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/obj/Debug/net10.0/CasaNova.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/obj/Debug/net10.0/CasaNova.Infrastructure.AssemblyInfoInputs.cache
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/obj/Debug/net10.0/CasaNova.Infrastructure.AssemblyInfo.cs
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/obj/Debug/net10.0/CasaNova.Infrastructure.csproj.CoreCompileInputs.cache
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/obj/Debug/net10.0/CasaNova.Infrastructure.dll
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/obj/Debug/net10.0/refint/CasaNova.Infrastructure.dll
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/obj/Debug/net10.0/CasaNova.Infrastructure.pdb
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/obj/Debug/net10.0/ref/CasaNova.Infrastructure.dll

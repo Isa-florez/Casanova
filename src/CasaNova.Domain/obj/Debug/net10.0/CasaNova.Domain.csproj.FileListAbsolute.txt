@@ -1,0 +1,11 @@
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/bin/Debug/net10.0/CasaNova.Domain.deps.json
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/bin/Debug/net10.0/CasaNova.Domain.dll
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/bin/Debug/net10.0/CasaNova.Domain.pdb
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/CasaNova.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/CasaNova.Domain.AssemblyInfoInputs.cache
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/CasaNova.Domain.AssemblyInfo.cs
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/CasaNova.Domain.csproj.CoreCompileInputs.cache
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/CasaNova.Domain.dll
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/refint/CasaNova.Domain.dll
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/CasaNova.Domain.pdb
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/ref/CasaNova.Domain.dll
