@@ -9,6 +9,8 @@
       "CasaNova.Infrastructure/1.0.0": {
         "dependencies": {
           "AutoMapper": "16.1.1",
+          "CasaNova.Application": "1.0.0",
+          "CasaNova.Domain": "1.0.0",
           "ClosedXML": "0.105.0",
           "MailKit": "4.17.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.9",
@@ -94,6 +96,14 @@
           }
         }
       },
+      "FluentValidation/12.1.1": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.1.1.0"
+          }
+        }
+      },
       "MailKit/4.17.0": {
         "dependencies": {
           "MimeKit": "4.17.0"
@@ -102,6 +112,28 @@
           "lib/net10.0/MailKit.dll": {
             "assemblyVersion": "4.17.0.0",
             "fileVersion": "4.17.0.0"
+          }
+        }
+      },
+      "MediatR/14.1.0": {
+        "dependencies": {
+          "MediatR.Contracts": "2.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.9",
+          "Microsoft.IdentityModel.JsonWebTokens": "8.14.0"
+        },
+        "runtime": {
+          "lib/net10.0/MediatR.dll": {
+            "assemblyVersion": "14.0.0.0",
+            "fileVersion": "14.1.0.0"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
           }
         }
       },
@@ -538,6 +570,28 @@
             "fileVersion": "10.0.25.52411"
           }
         }
+      },
+      "CasaNova.Application/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "16.1.1",
+          "CasaNova.Domain": "1.0.0",
+          "FluentValidation": "12.1.1",
+          "MediatR": "14.1.0"
+        },
+        "runtime": {
+          "CasaNova.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CasaNova.Domain/1.0.0": {
+        "runtime": {
+          "CasaNova.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -596,12 +650,33 @@
       "path": "excelnumberformat/1.1.0",
       "hashPath": "excelnumberformat.1.1.0.nupkg.sha512"
     },
+    "FluentValidation/12.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EPpkIe1yh1a0OXyC100oOA8WMbZvqUu5plwhvYcb7oSELfyUZzfxV48BLhvs3kKo4NwG7MGLNgy1RJiYtT8Dpw==",
+      "path": "fluentvalidation/12.1.1",
+      "hashPath": "fluentvalidation.12.1.1.nupkg.sha512"
+    },
     "MailKit/4.17.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-1nUAVLxM9fhT/78we6/AGsCesnpn5dRNLLeRqOfr52Wnk87pzVwo5YMTMyqnmoXrYc7piGhmayiMA/OgDluIjg==",
       "path": "mailkit/4.17.0",
       "hashPath": "mailkit.4.17.0.nupkg.sha512"
+    },
+    "MediatR/14.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pdxza1pLqAk+06LV3THzNJrw5K5Ah6EC17TEkoC90gsAxwtXDJAQrGuDSDinHGgxWKWEn5ebqTNN3k1bLJOb0g==",
+      "path": "mediatr/14.1.0",
+      "hashPath": "mediatr.14.1.0.nupkg.sha512"
+    },
+    "MediatR.Contracts/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "path": "mediatr.contracts/2.0.1",
+      "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/10.0.9": {
       "type": "package",
@@ -868,6 +943,16 @@
       "sha512": "sha512-UPWqLSygJlFerRi9XNIuM0a1VC8gHUIufyP24xQ0sc+XimqUAEcjpOz9DhKpyDjH+5B/wO3RpC0KpkEeDj/ddg==",
       "path": "system.security.cryptography.pkcs/10.0.0",
       "hashPath": "system.security.cryptography.pkcs.10.0.0.nupkg.sha512"
+    },
+    "CasaNova.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CasaNova.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

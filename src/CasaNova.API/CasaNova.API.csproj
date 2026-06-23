@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RentaCorta.Application\RentaCorta.Application.csproj" />
-    <ProjectReference Include="..\RentaCorta.Infrastructure\RentaCorta.Infrastructure.csproj" />
+    <ProjectReference Include="..\CasaNova.Application\CasaNova.Application.csproj" />
+    <ProjectReference Include="..\CasaNova.Infrastructure\CasaNova.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

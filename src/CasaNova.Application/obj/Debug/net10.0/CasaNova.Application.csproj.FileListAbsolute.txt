@@ -10,3 +10,7 @@
 /home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Application/obj/Debug/net10.0/refint/CasaNova.Application.dll
 /home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Application/obj/Debug/net10.0/CasaNova.Application.pdb
 /home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Application/obj/Debug/net10.0/ref/CasaNova.Application.dll
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Application/obj/Debug/net10.0/CasaNova.Application.sourcelink.json
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Application/bin/Debug/net10.0/CasaNova.Domain.dll
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Application/bin/Debug/net10.0/CasaNova.Domain.pdb
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Application/obj/Debug/net10.0/CasaNova.B2FD7823.Up2Date

@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\RentaCorta.Domain\RentaCorta.Domain.csproj" />
-    <ProjectReference Include="..\RentaCorta.Application\RentaCorta.Application.csproj" />
+    <ProjectReference Include="..\CasaNova.Domain\CasaNova.Domain.csproj" />
+    <ProjectReference Include="..\CasaNova.Application\CasaNova.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>

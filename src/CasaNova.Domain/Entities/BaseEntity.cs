@@ -1,4 +1,4 @@
-namespace RentaCorta.Domain.Entities;
+namespace CasaNova.Domain.Entities;
 
 public abstract class BaseEntity
 {

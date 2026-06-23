@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CasaNova.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89e0fbfe61674c1bd573d32d4ec9d9749ae2d6dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("CasaNova.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CasaNova.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -197,6 +197,16 @@
             "related": ".xml"
           }
         }
+      },
+      "CasaNova.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/CasaNova.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CasaNova.Domain.dll": {}
+        }
       }
     }
   },
@@ -551,11 +561,17 @@
         "microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
       ]
+    },
+    "CasaNova.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CasaNova.Domain/CasaNova.Domain.csproj",
+      "msbuildProject": "../CasaNova.Domain/CasaNova.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "AutoMapper >= 16.1.1",
+      "CasaNova.Domain >= 1.0.0",
       "FluentValidation >= 12.1.1",
       "MediatR >= 14.1.0"
     ]
@@ -585,7 +601,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/CasaNova.Domain.csproj": {
+              "projectPath": "/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/CasaNova.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

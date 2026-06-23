@@ -9,3 +9,4 @@
 /home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/refint/CasaNova.Domain.dll
 /home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/CasaNova.Domain.pdb
 /home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/ref/CasaNova.Domain.dll
+/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/obj/Debug/net10.0/CasaNova.Domain.sourcelink.json

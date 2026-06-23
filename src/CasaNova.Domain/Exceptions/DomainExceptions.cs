@@ -1,4 +1,4 @@
-namespace RentaCorta.Domain.Exceptions;
+namespace CasaNova.Domain.Exceptions;
 
 public class DomainException : Exception
 {

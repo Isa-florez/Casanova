@@ -1,4 +1,4 @@
-namespace RentaCorta.Domain.Enums;
+namespace CasaNova.Domain.Enums;
 
 public enum BookingStatus
 {

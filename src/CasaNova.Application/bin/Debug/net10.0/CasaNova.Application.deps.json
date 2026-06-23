@@ -9,6 +9,7 @@
       "CasaNova.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "16.1.1",
+          "CasaNova.Domain": "1.0.0",
           "FluentValidation": "12.1.1",
           "MediatR": "14.1.0"
         },
@@ -139,6 +140,14 @@
             "fileVersion": "8.14.0.60815"
           }
         }
+      },
+      "CasaNova.Domain/1.0.0": {
+        "runtime": {
+          "CasaNova.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -231,6 +240,11 @@
       "sha512": "sha512-lKIZiBiGd36k02TCdMHp1KlNWisyIvQxcYJvIkz7P4gSQ9zi8dgh6S5Grj8NNG7HWYIPfQymGyoZ6JB5d1Lo1g==",
       "path": "microsoft.identitymodel.tokens/8.14.0",
       "hashPath": "microsoft.identitymodel.tokens.8.14.0.nupkg.sha512"
+    },
+    "CasaNova.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
