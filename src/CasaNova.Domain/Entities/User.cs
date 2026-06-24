@@ -8,6 +8,7 @@ public class User : BaseEntity
     public string Email { get; private set; } = string.Empty;
     public string FirstName { get; private set; } = string.Empty;
     public string LastName { get; private set; } = string.Empty;
+    public string? PasswordHash { get; private set; }
     public UserRole Role { get; private set; }
     public KycStatus KycStatus { get; private set; } = KycStatus.NotStarted;
     public string? DocumentNumber { get; private set; }
@@ -30,6 +31,12 @@ public class User : BaseEntity
             LastName = lastName.Trim(),
             Role = role
         };
+    }
+
+    public void SetPasswordHash(string hash)
+    {
+        PasswordHash = hash;
+        SetUpdatedAt();
     }
 
     public void UpdateKycInfo(string documentNumber, DateTime dateOfBirth, string encryptedDocPath)

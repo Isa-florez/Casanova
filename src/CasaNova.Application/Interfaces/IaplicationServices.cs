@@ -41,3 +41,8 @@ public interface IJwtService
 {
     string GenerateToken(CasaNova.Domain.Entities.User user);
 }
+
+public interface IExcelExportService
+{
+    byte[] ExportBookings(IEnumerable<CasaNova.Domain.Entities.Booking> bookings);
+}

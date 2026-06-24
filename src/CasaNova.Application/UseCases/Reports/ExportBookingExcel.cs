@@ -30,9 +30,4 @@ public class ExportBookingsExcelHandler : IRequestHandler<ExportBookingsExcelQue
 
         return _excelService.ExportBookings(bookings);
     }
-
-    public interface IExcelExportService
-    {
-        byte[] ExportBookings(IEnumerable<Domain.Entities.Booking> bookings);
-    }
 }
