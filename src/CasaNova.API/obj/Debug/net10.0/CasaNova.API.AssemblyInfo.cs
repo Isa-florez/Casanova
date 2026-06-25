@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CasaNova.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5caae0b462001fc07251a2881c2502a0bf634537")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58c9758345cfdb561630533f02dd753867fd64f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("CasaNova.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CasaNova.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

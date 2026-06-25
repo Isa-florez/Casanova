@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xQxdRsaXnK8=",
+  "dgSpecHash": "LkxRfNMxqAg=",
   "success": true,
-  "projectFilePath": "/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Infrastructure/CasaNova.Infrastructure.csproj",
+  "projectFilePath": "/home/cohorte6/Descargas/Casanova/src/CasaNova.Infrastructure/CasaNova.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/cohorte6/.nuget/packages/automapper/16.1.1/automapper.16.1.1.nupkg.sha512",
     "/home/cohorte6/.nuget/packages/bouncycastle.cryptography/2.6.2/bouncycastle.cryptography.2.6.2.nupkg.sha512",

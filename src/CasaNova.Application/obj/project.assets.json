@@ -582,11 +582,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Application/CasaNova.Application.csproj",
+      "projectUniqueName": "/home/cohorte6/Descargas/Casanova/src/CasaNova.Application/CasaNova.Application.csproj",
       "projectName": "CasaNova.Application",
-      "projectPath": "/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Application/CasaNova.Application.csproj",
+      "projectPath": "/home/cohorte6/Descargas/Casanova/src/CasaNova.Application/CasaNova.Application.csproj",
       "packagesPath": "/home/cohorte6/.nuget/packages/",
-      "outputPath": "/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Application/obj/",
+      "outputPath": "/home/cohorte6/Descargas/Casanova/src/CasaNova.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/cohorte6/.nuget/NuGet/NuGet.Config"
@@ -602,8 +602,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/CasaNova.Domain.csproj": {
-              "projectPath": "/home/cohorte6/Escritorio/Casa_Nova/src/CasaNova.Domain/CasaNova.Domain.csproj"
+            "/home/cohorte6/Descargas/Casanova/src/CasaNova.Domain/CasaNova.Domain.csproj": {
+              "projectPath": "/home/cohorte6/Descargas/Casanova/src/CasaNova.Domain/CasaNova.Domain.csproj"
             }
           }
         }
