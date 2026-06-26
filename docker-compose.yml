@@ -7,7 +7,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - pg_data:/var/lib/postgresql/data
     healthcheck:
@@ -24,7 +24,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_URLS: http://+:8080
       ConnectionStrings__DefaultConnection: "Host=db;Port=5432;Database=casanova_db;Username=postgres;Password=postgres"
       Jwt__Secret: "CasaNova_SuperSecretKey_2024_MustBe32CharsMin!"
@@ -36,7 +36,9 @@ services:
       Email__From: "${EMAIL_FROM:-noreply@casanova.com}"
       Email__User: "${EMAIL_USER:-}"
       Email__Password: "${EMAIL_PASSWORD:-}"
-      OpenAI__ApiKey: "${OPENAI_API_KEY:-}"
+      OpenAI__ApiKey: "${OpenAI__ApiKey:-}"
+      OpenAI__Endpoint: "${OpenAI__Endpoint:-https://api.groq.com/openai/v1}"
+      OpenAI__Model: "${OpenAI__Model:-llama-3.3-70b-versatile}"
     depends_on:
       db:
         condition: service_healthy

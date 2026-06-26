@@ -48,6 +48,13 @@ public class User : BaseEntity
         SetUpdatedAt();
     }
 
+    public void VerifyKycWithDocumentNumber(string documentNumber)
+    {
+        DocumentNumber = documentNumber;
+        KycStatus = KycStatus.Approved;
+        SetUpdatedAt();
+    }
+
     public void ApproveKyc()
     {
         KycStatus = KycStatus.Approved;

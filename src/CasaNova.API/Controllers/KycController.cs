@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CasaNova.API.Controllers;
 
-public class KycUploadDto
+public class KycSubmitDto
 {
-    public IFormFile Document { get; set; } = null!;
+    public string DocumentNumber { get; set; } = string.Empty;
 }
 
 [ApiController]
@@ -19,12 +19,10 @@ public class KycController : ControllerBase
     public KycController(IMediator mediator) => _mediator = mediator;
 
     [HttpPost("submit")]
-    [Consumes("multipart/form-data")]
-    public async Task<IActionResult> Submit([FromForm] KycUploadDto dto, CancellationToken ct)
+    public async Task<IActionResult> Submit([FromBody] KycSubmitDto dto, CancellationToken ct)
     {
-        using var stream = dto.Document.OpenReadStream();
-        var command = new SubmitKycCommand(stream, dto.Document.FileName);
+        var command = new SubmitKycCommand(dto.DocumentNumber);
         await _mediator.Send(command, ct);
-        return Ok(new { message = "KYC enviado correctamente." });
+        return Ok(new { message = "Identidad verificada correctamente." });
     }
 }

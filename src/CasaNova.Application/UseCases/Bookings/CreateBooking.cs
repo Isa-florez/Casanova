@@ -28,6 +28,9 @@ public class CreateBookingHandler : IRequestHandler<CreateBookingCommand, Guid>
         if (!_currentUser.IsAuthenticated || !_currentUser.UserId.HasValue)
             throw new UnauthorizedException();
 
+        var checkIn = DateTime.SpecifyKind(request.CheckIn, DateTimeKind.Utc);
+        var checkOut = DateTime.SpecifyKind(request.CheckOut, DateTimeKind.Utc);
+
         var user = await _uow.Users.GetByIdAsync(_currentUser.UserId.Value, ct)
             ?? throw new NotFoundException(nameof(User), _currentUser.UserId.Value);
 
@@ -36,7 +39,7 @@ public class CreateBookingHandler : IRequestHandler<CreateBookingCommand, Guid>
             throw new DomainException("Debes completar la validación de identidad antes de realizar una reserva.");
 
         // Verificar double-booking a nivel de BD (segunda barrera)
-        var hasOverlap = await _uow.Bookings.HasOverlapAsync(request.PropertyId, request.CheckIn, request.CheckOut, ct: ct);
+        var hasOverlap = await _uow.Bookings.HasOverlapAsync(request.PropertyId, checkIn, checkOut, ct: ct);
         if (hasOverlap)
             throw new ConflictException("El inmueble no está disponible para las fechas seleccionadas.");
 
@@ -44,7 +47,7 @@ public class CreateBookingHandler : IRequestHandler<CreateBookingCommand, Guid>
             ?? throw new NotFoundException(nameof(Property), request.PropertyId);
 
         // Crear booking — las reglas del dominio se aplican aquí
-        var booking = Booking.Create(user.Id, property, request.CheckIn, request.CheckOut);
+        var booking = Booking.Create(user.Id, property, checkIn, checkOut);
 
         await _uow.Bookings.AddAsync(booking, ct);
 

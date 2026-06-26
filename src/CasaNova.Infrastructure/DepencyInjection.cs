@@ -33,9 +33,7 @@ public static class DependencyInjection
         services.AddScoped<IJwtService, JwtService>();
 
         // Servicios externos
-        services.AddScoped<IKycService, KycService>();
         services.AddScoped<IEmailService, EmailService>();
-        services.AddScoped<IStorageService, StorageService>();
         services.AddScoped<IExcelExportService, ExcelExportService>();
 
         return services;

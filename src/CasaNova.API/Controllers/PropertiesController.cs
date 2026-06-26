@@ -13,10 +13,15 @@ public class PropertiesController : ControllerBase
     public PropertiesController(IMediator mediator) => _mediator = mediator;
 
     [HttpGet]
-    public async Task<IActionResult> Search([FromQuery] SearchPropertiesQuery query, CancellationToken ct)
+    public async Task<IActionResult> Search([FromQuery] SearchPropertiesQuery query, [FromQuery] bool onlyMine = false, CancellationToken ct = default)
     {
-        var result = await _mediator.Send(query, ct);
-        return Ok(result);
+        if (onlyMine)
+        {
+            var result = await _mediator.Send(new GetOwnerPropertiesQuery(), ct);
+            return Ok(result);
+        }
+        var searchResult = await _mediator.Send(query, ct);
+        return Ok(searchResult);
     }
 
     [HttpGet("{id:guid}")]

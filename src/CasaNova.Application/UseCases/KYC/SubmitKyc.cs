@@ -6,22 +6,17 @@ using MediatR;
 
 namespace CasaNova.Application.UseCases.KYC;
 
-public record SubmitKycCommand(Stream DocumentImageStream, string FileName) : IRequest;
+public record SubmitKycCommand(string DocumentNumber) : IRequest;
 
 public class SubmitKycHandler : IRequestHandler<SubmitKycCommand>
 {
     private readonly IUnitOfWork _uow;
     private readonly ICurrentUserService _currentUser;
-    private readonly IKycService _kycService;
-    private readonly IStorageService _storageService;
 
-    public SubmitKycHandler(IUnitOfWork uow, ICurrentUserService currentUser,
-        IKycService kycService, IStorageService storageService)
+    public SubmitKycHandler(IUnitOfWork uow, ICurrentUserService currentUser)
     {
         _uow = uow;
         _currentUser = currentUser;
-        _kycService = kycService;
-        _storageService = storageService;
     }
 
     public async Task Handle(SubmitKycCommand request, CancellationToken ct)
@@ -35,15 +30,12 @@ public class SubmitKycHandler : IRequestHandler<SubmitKycCommand>
         if (user.KycStatus == KycStatus.Approved)
             throw new DomainException("Tu identidad ya fue validada.");
 
-        var extraction = await _kycService.ExtractDocumentDataAsync(request.DocumentImageStream, ct);
-        if (!extraction.Success)
-            throw new DomainException($"No se pudo procesar el documento: {extraction.ErrorMessage}");
+        var documentNumber = request.DocumentNumber?.Trim() ?? string.Empty;
 
-        var encryptedPath = await _storageService.UploadEncryptedAsync(
-            request.DocumentImageStream, request.FileName, ct);
+        if (documentNumber.Length < 7 || !documentNumber.All(char.IsDigit))
+            throw new DomainException("El número de documento debe tener mínimo 7 dígitos numéricos.");
 
-        user.UpdateKycInfo(extraction.DocumentNumber!, extraction.DateOfBirth!.Value, encryptedPath);
-        user.ApproveKyc();
+        user.VerifyKycWithDocumentNumber(documentNumber);
 
         var notification = Domain.Entities.Notification.Create(
             user.Id,
